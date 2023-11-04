@@ -188,7 +188,7 @@ fun GameWorld(
                     .offset(x = it.xOffset.dp, y = it.yOffset.dp)
             ) {
                 Icon(
-                    painter = painterResource(id = R.drawable.mineral),
+                    painter = painterResource(id = R.drawable.ic_mineral),
                     contentDescription = stringResource(id = R.string.mineral_content_description),
                     tint = Color.Unspecified,
                     modifier = Modifier
@@ -199,7 +199,7 @@ fun GameWorld(
         }
         explosions.forEach {
             Image(
-                painter = rememberImagePainter(data = R.drawable.explosion, imageLoader = imageLoader),
+                painter = rememberImagePainter(data = R.drawable.anim_explosion, imageLoader = imageLoader),
                 contentDescription = stringResource(id = R.string.explosion_content_description),
                 contentScale = ContentScale.FillBounds,
                 modifier = Modifier

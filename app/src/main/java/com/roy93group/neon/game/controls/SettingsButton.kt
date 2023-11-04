@@ -20,7 +20,7 @@ fun SettingsButton(modifier: Modifier = Modifier, onSettings: () -> Unit) {
     val buttonSize = 60.dp
 
     Image(
-        painter = painterResource(id = R.drawable.settings_button),
+        painter = painterResource(id = R.drawable.button_settings),
         contentDescription = stringResource(id = R.string.game_settings_button),
         modifier = modifier
             .padding(top = buttonPaddingTop, end = buttonPaddingEnd)

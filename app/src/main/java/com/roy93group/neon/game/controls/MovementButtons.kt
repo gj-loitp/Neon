@@ -30,7 +30,7 @@ fun MovementButtons(
 
         Box(modifier = Modifier.size(buttonSize)) {
             Image(
-                painter = painterResource(id = R.drawable.move_left_purple_button),
+                painter = painterResource(id = R.drawable.button_move_left_purple),
                 contentDescription = stringResource(id = R.string.game_left_button),
                 modifier = Modifier
                     .size(buttonSize)
@@ -48,7 +48,7 @@ fun MovementButtons(
 
         Box(modifier = Modifier.size(buttonSize)) {
             Image(
-                painterResource(id = R.drawable.move_right_purple_button),
+                painterResource(id = R.drawable.button_move_right_purple),
                 contentDescription = stringResource(id = R.string.game_right_button),
                 modifier = Modifier
                     .pointerInput(Unit) {

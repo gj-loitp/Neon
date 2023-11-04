@@ -78,7 +78,7 @@ data class LevelTwoBoss(
                         height = laserWidth,
                         xOffsetMovementSpeed = 0f,
                         yOffsetMovementSpeed = yOffMovementSpeed,
-                        drawableId = R.drawable.laser_red_8
+                        drawableId = R.drawable.ic_laser_red_8
                     )
                     add(laser)
                 }

@@ -51,9 +51,9 @@ class SpaceRock(
     }
 
     enum class RockType(@DrawableRes val drawableId: Int) {
-        ROCK_ONE(R.drawable.space_rock_1),
-        ROCK_TWO(R.drawable.space_rock_2),
-        ROCK_THREE(R.drawable.space_rock_3),
-        ROCK_FOUR(R.drawable.space_rock_4)
+        ROCK_ONE(R.drawable.ic_space_rock_1),
+        ROCK_TWO(R.drawable.ic_space_rock_2),
+        ROCK_THREE(R.drawable.ic_space_rock_3),
+        ROCK_FOUR(R.drawable.ic_space_rock_4)
     }
 }

@@ -16,7 +16,7 @@ data class ShipBoostedLaser(
     override var height: Float = 25f
     override var rotation: Float = 0f
     override var impactPower: Float = 100f
-    override val drawableId: Int = R.drawable.laser_red_16
+    override val drawableId: Int = R.drawable.ic_laser_red_16
     override var destroyed: Boolean = false
 
     override fun moveLaser() {

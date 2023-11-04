@@ -32,7 +32,7 @@ fun StatusIndicator(
     Column(modifier = modifier.padding(start = buttonPaddingEnd, top = buttonPaddingTop)) {
         Box(modifier = modifier.height(height = height)) {
             Image(
-                painter = painterResource(id = R.drawable.hp_indicator),
+                painter = painterResource(id = R.drawable.button_hp_indicator),
                 contentDescription = stringResource(id = R.string.game_hp_indicator),
                 modifier = Modifier.align(Alignment.Center)
             )
@@ -60,7 +60,7 @@ fun StatusIndicator(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                painter = painterResource(id = R.drawable.mineral),
+                painter = painterResource(id = R.drawable.ic_mineral),
                 contentDescription = stringResource(id = R.string.mineral_content_description),
                 tint = Color.Unspecified,
                 modifier = Modifier.size(22.dp)

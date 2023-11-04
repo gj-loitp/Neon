@@ -12,7 +12,7 @@ data class EnemyLaser(
     override var height: Float = 30f,
     override val xOffsetMovementSpeed: Float = 0f,
     override val yOffsetMovementSpeed: Float = 3.5f,
-    override val drawableId: Int = R.drawable.laser_red_14,
+    override val drawableId: Int = R.drawable.ic_laser_red_14,
     override var impactPower: Float = 100f
 ) : Laser {
 
