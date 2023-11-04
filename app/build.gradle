@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.zero.neon"
+    namespace "com.roy93group.neon"
     compileSdk 34
 
     defaultConfig {
