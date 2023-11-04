@@ -1,4 +1,4 @@
-package com.roy93group.neon.gamepause
+package com.roy93group.neon.ui.dlg.gamepause
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Column

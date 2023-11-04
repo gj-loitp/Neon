@@ -12,7 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.roy93group.neon.common.theme.NeonTheme
 import com.roy93group.neon.game.GameScreen
-import com.roy93group.neon.gamepause.GamePauseDialog
+import com.roy93group.neon.ui.dlg.gamepause.GamePauseDialog
 import com.roy93group.neon.navigation.Game
 import com.roy93group.neon.navigation.GamePause
 import com.roy93group.neon.navigation.Splash
