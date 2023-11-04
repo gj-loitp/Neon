@@ -16,8 +16,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.roy93group.neon.R
-import com.roy93group.neon.common.theme.Blue
-import com.roy93group.neon.common.theme.Pink
+import com.roy93group.neon.common.Blue
+import com.roy93group.neon.common.Pink
 
 @Composable
 fun GamePauseDialog(onRestartGame: () -> Unit) {

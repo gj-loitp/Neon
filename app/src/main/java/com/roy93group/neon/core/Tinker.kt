@@ -1,9 +1,9 @@
 package com.roy93group.neon.core
 
-import com.roy93group.neon.game.common.Millis
-import com.roy93group.neon.game.common.Never
-import com.roy93group.neon.game.common.Once
-import com.roy93group.neon.game.common.RepeatTime
+import com.roy93group.neon.ui.game.common.Millis
+import com.roy93group.neon.ui.game.common.Never
+import com.roy93group.neon.ui.game.common.Once
+import com.roy93group.neon.ui.game.common.RepeatTime
 
 /**
  * Stores unique work id as key and start time in milliseconds as value.
