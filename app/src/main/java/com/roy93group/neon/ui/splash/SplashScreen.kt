@@ -1,4 +1,4 @@
-package com.roy93group.neon.splash
+package com.roy93group.neon.ui.splash
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween

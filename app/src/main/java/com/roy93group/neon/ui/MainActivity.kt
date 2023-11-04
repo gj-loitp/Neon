@@ -1,4 +1,4 @@
-package com.roy93group.neon
+package com.roy93group.neon.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,12 +16,17 @@ import com.roy93group.neon.gamepause.GamePauseDialog
 import com.roy93group.neon.navigation.Game
 import com.roy93group.neon.navigation.GamePause
 import com.roy93group.neon.navigation.Splash
-import com.roy93group.neon.splash.SplashScreen
+import com.roy93group.neon.ui.splash.SplashScreen
 
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        setup()
+    }
+
+    private fun setup() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             NeonTheme {
@@ -53,4 +58,5 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
 }
