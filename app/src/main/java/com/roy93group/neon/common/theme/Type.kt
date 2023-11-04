@@ -10,11 +10,11 @@ import androidx.compose.ui.unit.sp
 import com.roy93group.neon.R
 
 val OrbitronFontFamily = FontFamily(
-    Font(R.font.orbitron_regular),
-    Font(R.font.orbitron_medium, FontWeight.Medium),
-    Font(R.font.orbitron_semibold, FontWeight.SemiBold),
-    Font(R.font.orbitron_bold, FontWeight.Bold),
-    Font(R.font.orbitron_black, FontWeight.Black),
+    Font(R.font.font_orbitron_regular),
+    Font(R.font.font_orbitron_medium, FontWeight.Medium),
+    Font(R.font.font_orbitron_semibold, FontWeight.SemiBold),
+    Font(R.font.font_orbitron_bold, FontWeight.Bold),
+    Font(R.font.font_orbitron_black, FontWeight.Black),
 )
 
 val Typography = Typography(
