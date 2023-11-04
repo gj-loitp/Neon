@@ -36,7 +36,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerExtensionVersion "1.2.0-alpha02"
     }
     packagingOptions {
         resources {
@@ -47,25 +47,25 @@ android {
 
 dependencies {
     /*Core*/
-    implementation "androidx.core:core-ktx:$core_ktx_version"
-    implementation "com.google.android.material:material:$material_version"
-    implementation "androidx.activity:activity-compose:$activity_compose_version"
+    implementation "androidx.core:core-ktx:1.7.0"
+    implementation "com.google.android.material:material:1.4.0"
+    implementation "androidx.activity:activity-compose:1.4.0"
     /*Compose*/
-    implementation "androidx.compose.ui:ui:$compose_version"
-    implementation "androidx.compose.material:material:$compose_version"
-    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
-    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.ui:ui:1.2.0-alpha02"
+    implementation "androidx.compose.material:material:1.2.0-alpha02"
+    implementation "androidx.compose.ui:ui-tooling-preview:1.2.0-alpha02"
+    debugImplementation "androidx.compose.ui:ui-tooling:1.2.0-alpha02"
     /*Accompanist*/
-    implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.20.3"
     /*Tests*/
-    testImplementation "junit:junit:$junit_version"
-    testImplementation "org.mockito:mockito-core:$mockito_version"
-    testImplementation "org.mockito:mockito-inline:$mockito_version"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-core:4.1.0"
+    testImplementation "org.mockito:mockito-inline:4.1.0"
     /*Audio player*/
-    implementation "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer:2.16.1"
     /*Image*/
-    implementation "io.coil-kt:coil-compose:$coil_version"
-    implementation "io.coil-kt:coil-gif:$coil_version"
+    implementation "io.coil-kt:coil-compose:1.4.0"
+    implementation "io.coil-kt:coil-gif:1.4.0"
     /*Navigation*/
-    implementation "androidx.navigation:navigation-compose:$navigation_version"
+    implementation "androidx.navigation:navigation-compose:2.4.0-rc01"
 }
