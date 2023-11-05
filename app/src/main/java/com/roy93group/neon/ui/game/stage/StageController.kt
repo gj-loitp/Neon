@@ -6,7 +6,7 @@ import com.roy93group.neon.utils.DateUtils
 class StageController(
     private val dateUtils: DateUtils = DateUtils(),
     private var stageIndex: Int = 0,
-    private var stageStartSnapshotMillis: Long = dateUtils.currentTimeMillis()
+    private var stageStartSnapshotMillis: Long = dateUtils.currentTimeMillis(),
 ) {
 
     fun getGameStage(readyForNextStage: Boolean = false): Stage {

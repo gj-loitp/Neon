@@ -9,7 +9,7 @@ import com.roy93group.neon.ui.game.booster.BoosterType
 import com.roy93group.neon.ui.game.common.Millis
 import com.roy93group.neon.ui.game.enemy.ship.model.Enemy
 import com.roy93group.neon.ui.game.laser.Laser
-import com.roy93group.neon.ui.game.spaceobject.SpaceObject
+import com.roy93group.neon.ui.game.spaceObject.SpaceObject
 import java.util.*
 
 class ShipController(

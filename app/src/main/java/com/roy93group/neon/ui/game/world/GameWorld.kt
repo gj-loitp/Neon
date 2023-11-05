@@ -1,11 +1,23 @@
 package com.roy93group.neon.ui.game.world
 
 import androidx.compose.animation.animateColor
-import androidx.compose.animation.core.*
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.absoluteOffset
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -33,7 +45,7 @@ import com.roy93group.neon.ui.game.explosion.model.Explosion
 import com.roy93group.neon.ui.game.mineral.model.MineralUI
 import com.roy93group.neon.ui.game.ship.laser.LaserUI
 import com.roy93group.neon.ui.game.ship.ship.Ship
-import com.roy93group.neon.ui.game.spaceobject.SpaceObjectUI
+import com.roy93group.neon.ui.game.spaceObject.SpaceObjectUI
 import com.roy93group.neon.ui.game.utils.rememberImageLoader
 
 @Composable
@@ -48,7 +60,7 @@ fun GameWorld(
     enemyLasers: List<LaserUI>,
     minerals: List<MineralUI>,
     explosions: List<Explosion>,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
 
     val imageLoader = rememberImageLoader()

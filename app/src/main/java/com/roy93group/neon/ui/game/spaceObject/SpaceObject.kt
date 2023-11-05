@@ -1,4 +1,4 @@
-package com.roy93group.neon.ui.game.spaceobject
+package com.roy93group.neon.ui.game.spaceObject
 
 import androidx.compose.ui.geometry.Rect
 import java.io.Serializable

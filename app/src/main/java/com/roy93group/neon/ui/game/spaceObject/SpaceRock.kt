@@ -1,4 +1,4 @@
-package com.roy93group.neon.ui.game.spaceobject
+package com.roy93group.neon.ui.game.spaceObject
 
 import androidx.annotation.DrawableRes
 import androidx.compose.ui.geometry.Offset
@@ -10,7 +10,7 @@ import kotlin.random.Random
 class SpaceRock(
     override var xOffset: Float,
     override var size: Float,
-    private val screenHeight: Float
+    private val screenHeight: Float,
 ) : SpaceObject {
     override val id: String = UUID.randomUUID().toString()
     override val destroyable: Boolean = true

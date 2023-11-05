@@ -31,10 +31,10 @@ import com.roy93group.neon.ui.game.ship.laser.LaserUI
 import com.roy93group.neon.ui.game.ship.laser.LasersController
 import com.roy93group.neon.ui.game.ship.ship.Ship
 import com.roy93group.neon.ui.game.ship.ship.ShipController
-import com.roy93group.neon.ui.game.spaceobject.SpaceObject
-import com.roy93group.neon.ui.game.spaceobject.SpaceObjectToSpaceObjectUIMapper
-import com.roy93group.neon.ui.game.spaceobject.SpaceObjectUI
-import com.roy93group.neon.ui.game.spaceobject.SpaceObjectsController
+import com.roy93group.neon.ui.game.spaceObject.SpaceObject
+import com.roy93group.neon.ui.game.spaceObject.SpaceObjectToSpaceObjectUIMapper
+import com.roy93group.neon.ui.game.spaceObject.SpaceObjectUI
+import com.roy93group.neon.ui.game.spaceObject.SpaceObjectsController
 import com.roy93group.neon.ui.game.stage.StageBoss
 import com.roy93group.neon.ui.game.stage.StageController
 import com.roy93group.neon.ui.game.stage.StageGame
@@ -179,8 +179,8 @@ fun rememberGameState(): GameState {
     }
 
     var gameStatus by rememberSaveable { mutableStateOf(GameStatus.RUNNING) }
-    fun setGameStatus(_gameStatus: GameStatus) {
-        gameStatus = _gameStatus
+    fun setGameStatus(gameStt: GameStatus) {
+        gameStatus = gameStt
     }
 
     var gameTimeSec by rememberSaveable { mutableStateOf<Long>(0) }
@@ -409,9 +409,8 @@ data class GameState(
     val explosions: List<Explosion>,
     val moveShipLeft: (Boolean) -> Unit,
     val moveShipRight: (Boolean) -> Unit,
-    val toggleGameStatus: () -> Unit
+    val toggleGameStatus: () -> Unit,
 )
-
 
 private val boosterMapper = BoosterToBoosterUIMapper()
 private val enemyMapper = EnemyToEnemyUIMapper()

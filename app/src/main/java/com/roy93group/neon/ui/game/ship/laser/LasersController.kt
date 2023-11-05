@@ -10,7 +10,7 @@ import com.roy93group.neon.ui.game.ship.laser.ShipBoostedLaser.Companion.SHIP_BO
 import com.roy93group.neon.ui.game.ship.laser.ShipLaser.Companion.SHIP_LASER_WIDTH
 import com.roy93group.neon.ui.game.ship.ship.Ship
 import com.roy93group.neon.ui.game.ship.ship.ShipController.Companion.TRIPLE_LASER_SIDE_OFFSET
-import com.roy93group.neon.ui.game.spaceobject.SpaceObject
+import com.roy93group.neon.ui.game.spaceObject.SpaceObject
 import com.roy93group.neon.utils.UuidUtils
 
 class LasersController(

@@ -1,14 +1,14 @@
-package com.roy93group.neon.ui.game.spaceobject
+package com.roy93group.neon.ui.game.spaceObject
 
 import com.roy93group.neon.ui.game.common.Millis
-import java.util.*
+import java.util.UUID
 import kotlin.random.Random
 
 class SpaceObjectsController(
     private val screenWidth: Float,
     private val screenHeight: Float,
     initialSpaceObjects: List<SpaceObject>,
-    private val setSpaceObjects: (List<SpaceObject>) -> Unit
+    private val setSpaceObjects: (List<SpaceObject>) -> Unit,
 ) {
 
     var spaceObjects: List<SpaceObject> = initialSpaceObjects

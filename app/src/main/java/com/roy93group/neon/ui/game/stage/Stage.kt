@@ -12,7 +12,7 @@ import com.roy93group.neon.ui.game.enemy.ship.model.Row
 import com.roy93group.neon.ui.game.enemy.ship.model.ZigZag
 import com.roy93group.neon.ui.game.enemy.ship.model.ZigZagInitialPosition
 import java.io.Serializable
-import java.util.*
+import java.util.UUID
 
 val stages = listOf(
     StageMessage(
@@ -292,7 +292,7 @@ data class StageMessage(val message: String, val durationMillis: Int) : Stage(du
 data class StageGame(
     val spaceRockSpawnRateMillis: RepeatTime = Never,
     val enemyType: EnemyType,
-    val durationTimeSec: Int
+    val durationTimeSec: Int,
 ) : Stage(durationTimeSec)
 
 data class StageBoss(val bossId: String, val enemyType: EnemyType) : Stage(1)

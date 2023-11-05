@@ -1,4 +1,4 @@
-package com.roy93group.neon.ui.game.spaceobject
+package com.roy93group.neon.ui.game.spaceObject
 
 import androidx.annotation.DrawableRes
 import androidx.compose.runtime.Immutable
