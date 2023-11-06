@@ -20,7 +20,7 @@ class LasersController(
     initialShipLasers: List<Laser> = listOf(),
     initialUltimateLasers: List<Laser> = listOf(),
     private val setShipLasers: (List<Laser>) -> Unit,
-    private val setUltimateLasers: (List<Laser>) -> Unit
+    private val setUltimateLasers: (List<Laser>) -> Unit,
 ) {
 
     private var shipLasers: List<Laser> = initialShipLasers

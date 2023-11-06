@@ -16,7 +16,7 @@ class ShipController(
     private val screenWidth: Float,
     screenHeight: Float,
     private var ship: Ship,
-    private val setShip: (Ship) -> Unit
+    private val setShip: (Ship) -> Unit,
 ) {
 
     private val spaceShipCollidePower: Float = 100f
@@ -28,6 +28,7 @@ class ShipController(
 
     val moveShipId = UUID.randomUUID().toString()
     val moveShipRepeatTime = Millis(3)
+
     fun moveShip() {
         if (ship.yOffset > maxYOffset) {
             updateYOffset(ship.yOffset - movementSpeed)
@@ -81,7 +82,7 @@ class ShipController(
         boosters: List<Booster>,
         enemies: List<Enemy>,
         enemyLasers: List<Laser>,
-        fileUltimateLaser: () -> Unit
+        fileUltimateLaser: () -> Unit,
     ) {
         val shipRect by lazy {
             Rect(

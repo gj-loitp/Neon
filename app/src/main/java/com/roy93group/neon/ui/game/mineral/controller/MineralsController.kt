@@ -7,7 +7,7 @@ import java.util.*
 class MineralsController(
     initialMinerals: List<Mineral>,
     private val updateMinerals: (List<Mineral>) -> Unit,
-    private val updateMineralsEarnedTotal: (Int) -> Unit
+    private val updateMineralsEarnedTotal: (Int) -> Unit,
 ) {
 
     private var minerals: List<Mineral> = initialMinerals

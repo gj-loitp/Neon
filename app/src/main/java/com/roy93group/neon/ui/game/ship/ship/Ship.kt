@@ -1,10 +1,12 @@
 package com.roy93group.neon.ui.game.ship.ship
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.Keep
 import androidx.compose.runtime.Immutable
 import com.roy93group.neon.R
 import java.io.Serializable
 
+@Keep
 @Immutable
 data class Ship(
     val width: Float = 85f,
@@ -16,5 +18,5 @@ data class Ship(
     val xOffset: Float,
     val yOffset: Float,
     val hp: Int = 1000,
-    @DrawableRes val drawableId: Int = R.drawable.ship_regular_laser
+    @DrawableRes val drawableId: Int = R.drawable.ship_regular_laser,
 ) : Serializable

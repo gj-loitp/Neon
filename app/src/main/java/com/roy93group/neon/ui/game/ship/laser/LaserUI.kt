@@ -1,9 +1,11 @@
 package com.roy93group.neon.ui.game.ship.laser
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.Keep
 import androidx.compose.runtime.Immutable
 import java.io.Serializable
 
+@Keep
 @Immutable
 data class LaserUI(
     val id: String,
@@ -12,5 +14,5 @@ data class LaserUI(
     val width: Float,
     val height: Float,
     val rotation: Float,
-    @DrawableRes val drawableId: Int
+    @DrawableRes val drawableId: Int,
 ) : Serializable

@@ -1,14 +1,16 @@
 package com.roy93group.neon.ui.game.ship.laser
 
+import androidx.annotation.Keep
 import com.roy93group.neon.R
 import com.roy93group.neon.ui.game.laser.Laser
 
+@Keep
 data class ShipBoostedLaser(
     override val id: String,
     override var xOffset: Float,
     override var yOffset: Float,
     private val yRange: Float,
-    override var width: Float = SHIP_BOOSTED_LASER_WIDTH
+    override var width: Float = SHIP_BOOSTED_LASER_WIDTH,
 ) : Laser {
 
     override val xOffsetMovementSpeed: Float = 0f
