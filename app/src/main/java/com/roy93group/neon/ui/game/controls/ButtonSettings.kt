@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import com.roy93group.neon.R
 
 @Composable
-fun SettingsButton(modifier: Modifier = Modifier, onSettings: () -> Unit) {
+fun ButtonSettings(modifier: Modifier = Modifier, onSettings: () -> Unit) {
 
     val buttonPaddingEnd = dimensionResource(id = R.dimen.button_padding)
     val buttonPaddingTop = buttonPaddingEnd * 2

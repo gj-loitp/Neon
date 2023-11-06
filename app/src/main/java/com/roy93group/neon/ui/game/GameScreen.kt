@@ -17,9 +17,9 @@ import androidx.compose.ui.zIndex
 import com.roy93group.neon.common.Blue
 import com.roy93group.neon.common.Pink
 import com.roy93group.neon.ui.game.audio.AudioPlayer
-import com.roy93group.neon.ui.game.controls.MovementButtons
-import com.roy93group.neon.ui.game.controls.SettingsButton
-import com.roy93group.neon.ui.game.controls.StatusIndicator
+import com.roy93group.neon.ui.game.controls.ButtonsMovement
+import com.roy93group.neon.ui.game.controls.ButtonSettings
+import com.roy93group.neon.ui.game.controls.IndicatorStatus
 import com.roy93group.neon.ui.game.state.rememberGameState
 import com.roy93group.neon.ui.game.world.GameWorld
 
@@ -33,7 +33,7 @@ fun GameScreen(onGamePause: () -> Unit) {
             .fillMaxSize()
             .background(brush = Brush.verticalGradient(colors = listOf(Blue, Pink)))
     ) {
-        StatusIndicator(
+        IndicatorStatus(
             gameTime = gameState.gameTimeIndicator,
             hp = gameState.ship.hp,
             mineralsEarnedTotal = gameState.mineralsEarnedTotal,
@@ -41,7 +41,7 @@ fun GameScreen(onGamePause: () -> Unit) {
                 .align(Alignment.TopStart)
                 .zIndex(300f)
         )
-        SettingsButton(
+        ButtonSettings(
             modifier = Modifier
                 .align(Alignment.TopEnd)
                 .zIndex(300f)
@@ -69,7 +69,7 @@ fun GameScreen(onGamePause: () -> Unit) {
                 explosions = gameState.explosions,
                 modifier = Modifier.weight(1f)
             )
-            MovementButtons(
+            ButtonsMovement(
                 onMoveLeft = { gameState.moveShipLeft(it) },
                 onMoveRight = { gameState.moveShipRight(it) },
                 modifier = Modifier.padding(bottom = 24.dp)

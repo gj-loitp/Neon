@@ -1,12 +1,14 @@
 package com.roy93group.neon.ui.game.constellation
 
+import androidx.annotation.Keep
 import java.io.Serializable
 
+@Keep
 data class Star(
     var xOffset: Float,
     var yOffset: Float,
     private val maxYOffset: Float,
-    var size: Float
+    var size: Float,
 ) : Serializable {
 
     private val initialStarSize = size

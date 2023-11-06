@@ -6,7 +6,7 @@ import kotlin.random.Random
 
 class ConstellationController(
     private val stars: () -> List<Star>,
-    private val setStars: (List<Star>) -> Unit
+    private val setStars: (List<Star>) -> Unit,
 ) {
 
     fun createStars(screenWidth: Float, screenHeight: Float) {

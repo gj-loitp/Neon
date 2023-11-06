@@ -12,7 +12,7 @@ import androidx.compose.ui.res.stringResource
 import com.roy93group.neon.R
 
 @Composable
-fun MovementButtons(
+fun ButtonsMovement(
     onMoveLeft: (Boolean) -> Unit,
     onMoveRight: (Boolean) -> Unit,
     modifier: Modifier = Modifier,

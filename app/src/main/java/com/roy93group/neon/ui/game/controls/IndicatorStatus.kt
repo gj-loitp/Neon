@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.sp
 import com.roy93group.neon.R
 
 @Composable
-fun StatusIndicator(
+fun IndicatorStatus(
     gameTime: String,
     hp: Int,
     mineralsEarnedTotal: String,
