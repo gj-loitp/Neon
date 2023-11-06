@@ -20,7 +20,7 @@ import com.roy93group.neon.common.Blue
 import com.roy93group.neon.common.Pink
 
 @Composable
-fun GamePauseDialog(onRestartGame: () -> Unit) {
+fun DialogGamePause(onRestartGame: () -> Unit) {
     Card(
         backgroundColor = Blue,
         border = BorderStroke(2.dp, Pink)

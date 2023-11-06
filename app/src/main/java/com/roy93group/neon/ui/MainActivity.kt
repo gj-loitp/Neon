@@ -11,7 +11,7 @@ import androidx.navigation.compose.dialog
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.roy93group.neon.common.NeonTheme
-import com.roy93group.neon.ui.dlg.gamepause.GamePauseDialog
+import com.roy93group.neon.ui.dlg.gamepause.DialogGamePause
 import com.roy93group.neon.navigation.Game
 import com.roy93group.neon.navigation.GamePause
 import com.roy93group.neon.navigation.Splash
@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
                         GameScreen(onGamePause = { navController.navigate(GamePause.route) })
                     }
                     dialog(route = GamePause.route) {
-                        GamePauseDialog(onRestartGame = {
+                        DialogGamePause(onRestartGame = {
                             navController.navigate(Game.route) { popUpTo(navController.graph.id) }
                         })
                     }

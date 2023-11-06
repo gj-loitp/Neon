@@ -1,14 +1,16 @@
 package com.roy93group.neon.ui.game.booster
 
+import androidx.annotation.Keep
 import java.io.Serializable
 import kotlin.random.Random
 
+@Keep
 data class Booster(
     val id: String,
     var xOffset: Float,
     var size: Float,
     private val screenHeight: Float,
-    var collected: Boolean = false
+    var collected: Boolean = false,
 ) : Serializable {
 
     var yOffset = 1f

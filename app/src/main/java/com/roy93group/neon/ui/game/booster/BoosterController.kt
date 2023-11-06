@@ -9,7 +9,7 @@ class BoosterController(
     private val uuidUtils: UuidUtils,
     private val generateBooster: GenerateBooster = GenerateBooster(uuidUtils, screenHeight),
     initialBoosters: List<Booster>,
-    private val updateBoosters: (List<Booster>) -> Unit
+    private val updateBoosters: (List<Booster>) -> Unit,
 ) {
 
     var boosters: List<Booster> = initialBoosters
