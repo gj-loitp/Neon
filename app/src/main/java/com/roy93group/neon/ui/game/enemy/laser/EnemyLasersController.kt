@@ -8,7 +8,7 @@ import java.util.*
 class EnemyLasersController(
     private val screenHeight: Float,
     initialEnemyLasers: List<Laser>,
-    private val setEnemyLasers: (List<Laser>) -> Unit
+    private val setEnemyLasers: (List<Laser>) -> Unit,
 ) {
 
     var enemyLasers: List<Laser> = initialEnemyLasers

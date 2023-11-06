@@ -16,7 +16,7 @@ class EnemyController(
     initialEnemies: List<Enemy> = emptyList(),
     private val setEnemies: (List<Enemy>) -> Unit,
     private val addMinerals: (xOffset: Float, yOffset: Float, width: Float, mineralAmount: Int) -> Unit,
-    private val addExplosion: (xOffset: Float, yOffset: Float, width: Float, height: Float) -> Unit
+    private val addExplosion: (xOffset: Float, yOffset: Float, width: Float, height: Float) -> Unit,
 ) {
 
     private var enemies: List<Enemy> = initialEnemies

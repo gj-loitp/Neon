@@ -6,7 +6,7 @@ import java.util.*
 
 class ExplosionController(
     initialExplosions: List<Explosion>,
-    private val updateExplosions: (List<Explosion>) -> Unit
+    private val updateExplosions: (List<Explosion>) -> Unit,
 ) {
 
     private var explosions: List<Explosion> = initialExplosions

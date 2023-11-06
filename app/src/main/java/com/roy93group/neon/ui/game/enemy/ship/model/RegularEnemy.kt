@@ -1,17 +1,19 @@
 package com.roy93group.neon.ui.game.enemy.ship.model
 
+import androidx.annotation.Keep
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import com.roy93group.neon.ui.game.enemy.laser.EnemyLaser
 import com.roy93group.neon.ui.game.laser.Laser
 import java.util.*
 
+@Keep
 data class RegularEnemy(
     private val screenWidth: Float,
     private val screenHeight: Float,
     override var xOffset: Float,
     private val type: RegularEnemyType,
-    override var hp: Float = type.hp
+    override var hp: Float = type.hp,
 ) : Enemy {
 
     override val enemyId: String = UUID.randomUUID().toString()

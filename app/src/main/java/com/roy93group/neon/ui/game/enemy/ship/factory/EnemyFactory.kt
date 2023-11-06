@@ -15,7 +15,7 @@ import com.roy93group.neon.ui.game.ship.ship.Ship
 class EnemyFactory(
     private val screenWidth: Float,
     private val screenHeight: Float,
-    private val formationXOffset: FormationXOffset = FormationXOffset(screenWidth)
+    private val formationXOffset: FormationXOffset = FormationXOffset(screenWidth),
 ) {
 
     operator fun invoke(type: EnemyType, getShip: () -> Ship): List<Enemy> {
@@ -31,6 +31,7 @@ class EnemyFactory(
                     )
                     enemies += enemy
                 }
+
                 is Row -> {
                     for (i in 1..type.formation.rowCount) {
                         val enemy = RegularEnemy(
@@ -54,7 +55,7 @@ class EnemyFactory(
                 getShip = getShip
             )
             enemies += boss
-        } else if(type is LevelTwoBossType && enemies.isEmpty()) {
+        } else if (type is LevelTwoBossType && enemies.isEmpty()) {
             val boss = LevelTwoBoss(screenWidth = screenWidth, screenHeight = screenHeight)
             enemies += boss
         }

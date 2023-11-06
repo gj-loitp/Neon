@@ -1,5 +1,6 @@
 package com.roy93group.neon.ui.game.enemy.ship.model
 
+import androidx.annotation.Keep
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import com.roy93group.neon.R
@@ -8,9 +9,10 @@ import com.roy93group.neon.ui.game.laser.Laser
 import java.util.*
 import kotlin.random.Random
 
+@Keep
 data class LevelTwoBoss(
     private val screenWidth: Float,
-    private val screenHeight: Float
+    private val screenHeight: Float,
 ) : Enemy {
 
     override val enemyId: String = UUID.randomUUID().toString()

@@ -1,9 +1,11 @@
 package com.roy93group.neon.ui.game.enemy.ship.model
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.Keep
 import androidx.compose.runtime.Immutable
 import java.io.Serializable
 
+@Keep
 @Immutable
 data class EnemyUI(
     val enemyId: String,
@@ -12,5 +14,5 @@ data class EnemyUI(
     val xOffset: Float,
     val yOffset: Float,
     val hpBarWidth: Float,
-    @DrawableRes val drawableId: Int
+    @DrawableRes val drawableId: Int,
 ) : Serializable

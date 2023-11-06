@@ -16,7 +16,7 @@ data class RegularEnemyType(
     val formation: EnemyFormation,
     val xOffsetSpeed: Float,
     val yOffsetSpeed: Float,
-    val enemySpawnRate: RepeatTime
+    val enemySpawnRate: RepeatTime,
 ) : EnemyType(spawnRate = enemySpawnRate)
 
 object LevelOneBossType : EnemyType(spawnRate = Once)
