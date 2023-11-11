@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.roy93group.neon.common.Blue
 import com.roy93group.neon.common.Pink
@@ -56,6 +57,7 @@ fun SplashScreen(onStartGame: () -> Unit) {
         Spacer(modifier = Modifier.height(16.dp))
         Box(modifier = Modifier.clip(RectangleShape)) {
             Text(
+                textAlign = TextAlign.Center,
                 text = stringResource(id = R.string.app_name),
                 style = MaterialTheme.typography.h2,
                 fontWeight = FontWeight.Bold,
